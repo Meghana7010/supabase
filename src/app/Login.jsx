@@ -41,7 +41,7 @@ const Login = () => {
               <input type="checkbox" id="remember" />
               <label htmlFor="remember">Remember for 30 days</label>
             </div>
-            <a href="#" className="forgot-pass-link">Forgot Password?</a>
+            <a  className="forgot-pass-link">Forgot Password?</a>
           </div>
 
         <button onClick={handleSubmit} className='login-button'>Sign In</button>
@@ -51,7 +51,7 @@ const Login = () => {
             Sign in with google
         </button>
        </div>
-       <p className="signup-text">Don't have an account?<a href="#">Signup Now</a></p>
+       <p className="signup-text">Don't have an account?<a>Signup Now</a></p>
       
   
        </form>
