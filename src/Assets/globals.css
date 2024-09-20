@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #d1cfe4;
+}
+
+#root {
+    width: 100%;
+    padding: 0 0.6rem;
+}
+
+.App {
+    width: 70%; 
+    height: 80vh; 
+    border-radius: 0.5rem;
+    background-color: #fff; 
+    margin: 0 auto;
+    
+    display: flex; 
+    flex-direction: row; 
+}
+
+.left-section {
+    flex: 1;
+    justify-content: space-between;
+    padding: 6rem 6rem 0 6rem ;
+    border-radius: 0.5rem;
+    background-color: #f9fafb; 
+    text-align: left;
+}
+
+.right-section {
+    flex: 1;
+    padding: 6rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f5f7; 
+}
+
+.semi-circle {
+    height: 210px;
+}
+
+.App .social-login{
+    margin-top: auto;
+     display: flex;
+     gap: 1.31rem;   
+}
+
+.App .form-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.App .form-header {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.social-login .social-button {
+    display: flex;
+    width:  340px;
+    gap: 0.81rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 500;
+    height: 35px;
+    align-items: center;
+    border-radius: 0.31rem;
+    justify-content: center;
+    background: #F9F8FF;
+    border: 1px solid #D5CBFF;
+    transition: 0.3s ease;
+}
+
+.social-login .social-button:hover {
+    background: #f1eff9;
+    border-color: #5F41e4;
+}
+
+.social-login .social-button .social-icon {
+    width: 23px;
+}
+
+ .input-wrapper {
+    height: 40px;
+    width:  340px;
+    margin-bottom: 0.1rem;
+}
+.login-form .input-label {
+    font-size: 0.8rem;
+}
+
+  .input-field {
+    height: 80%;
+    width: 100%;
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    border: 1px solid #bfb3f2;
+    padding: 0 1.25rem 0 2rem;
+    transition: 0.2s ease;
+}
+
+.login-form .input-wrapper .input-field:focus {
+    border-color: #5F41e4;
+}
+
+.login-form .input-wrapper .input-field::placeholder {
+    color: #a395e0;
+}
+
+.login-form .input-wrapper {
+    color: #a395e0;
+    position: relative;
+    top: 50%;
+    transition: 0.2s ease;
+}
+ .remember-forgot-wrapper {
+    font-size: 0.8rem;
+    display: flex;
+ }
+ .remember-forgot-wrapper .remember-section {
+    flex-grow: 1; 
+ }
+
+.login-form .forgot-pass-link {
+    text-align: right;
+    display: block;
+    width: fit-content;
+    
+}
+.login-form .login-button {
+
+    width: 100%; 
+    height: 40px; 
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.8rem;
+    background: #6944c5;
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: 0.31rem;
+    transition: 0.2s ease;
+
+
+}
+
+.login-form .login-button:hover {
+    background: #4320df;
+}
+
+.App .signup-text  {
+    
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;  
+    margin: 1rem 0 0 0;
+}
+
+.App a {
+    color: #5F41e4;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.App a:hover {
+    text-decoration: underline;
+}
+
+.success-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .success-content {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+@media (max-width: 768px) {
+    .App {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-section, .right-section {
+        padding: 2rem; 
+    }
+
+    .left-section {
+        flex: none;
+        width: 100%;
+    }
+
+    .right-section {
+        flex: none;
+        width: 100%;
+        margin-top: 2rem; 
+    }
+
+    .login-form .input-wrapper {
+        width: 100%; 
+    }
+    .login-form .login-button {
+        height: 45px; 
+        width: 100%; 
+        font-size: 0.9rem; 
+    }
+
+
+    .social-login .social-button {
+        font-size: 0.9rem;
+    }
+
+    .login-form .login-button {
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .remember-forgot-wrapper {
+        font-size: 0.9rem;
+    }
+
+    .signup-text {
+        font-size: 0.9rem;
+    }
+}
