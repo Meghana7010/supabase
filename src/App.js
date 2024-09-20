@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import Login from './app/Login';
-import { selectAuthenticated, selectUser } from './redux/userSlice';
+import { selectAuthenticated} from './redux/userSlice';
 import Success from './app/Success';
 
 function App() {

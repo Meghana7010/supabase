@@ -9,7 +9,7 @@ const useLoginHook = () => {
 
   const onLogin = async (name, email, password) => {
     try {
-      const { data, error } = await supabase.auth.signInWithPassword({
+      const { data } = await supabase.auth.signInWithPassword({
         email: email,
         password: password,
       });
